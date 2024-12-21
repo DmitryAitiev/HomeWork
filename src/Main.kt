@@ -11,9 +11,11 @@ fun main() {
     chargingMobiles.forEach { println(it) }
 
     println("\nЗапущенные приложения:")
-    mobiles.forEach {
-        print(it.getAppName())
+    val workingApps = mobiles.getAppName()
+    workingApps.forEach {
+        println(it)
     }
+
 
     //Ошибка будет часто выводить из-за функции generateState(), можно уменьшить вероятность вывода ошибки,
     //немного изменив её

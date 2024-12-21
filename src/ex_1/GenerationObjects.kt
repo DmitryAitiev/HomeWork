@@ -13,7 +13,7 @@ fun generateMobile(count: Int): List<Mobile> {
 }
 
 fun generateState(): MobileState {
-    return when ((0..3).random()) {
+    return when ((0..2).random()) {
         0 -> MobileState.Charging
         1 -> MobileState.AirMode
         2 -> MobileState.UsingApp(App.values().random())
