@@ -3,7 +3,7 @@ import ex_1.*
 
 fun main() {
 
-    val mobiles by lazy { generateMobile(5)}
+    val mobiles by lazy { generateMobile(5) }
     mobiles.forEach { println(it) }
 
     val chargingMobiles = filterMobile(mobiles, MobileState.Charging)
@@ -15,8 +15,4 @@ fun main() {
     workingApps.forEach {
         println(it)
     }
-
-
-    //Ошибка будет часто выводить из-за функции generateState(), можно уменьшить вероятность вывода ошибки,
-    //немного изменив её
 }
